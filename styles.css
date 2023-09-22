@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins:wght@300;500;600&family=Roboto+Mono:wght@500&family=Sacramento&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" , sans-serif;
+}
+
+
+.upperContainer{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    padding: 20px 36px;
+    border-radius: 8px;
+    background-color: #4070f4;
+    box-shadow: 5px 10px solid (0,0,0,0.2);
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.button .icon{
+    font-size:  32px;
+    color: #fff;
+    margin-right: 10px;
+    display: none;
+}
+
+.button.checked .icon{
+    display: flex;
+}
+
+.icon.spinner.spin{
+    animation: spin 1.2s ease-in-out infinite;
+}
+
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.icon.check{
+    display: inline-flex;
+    background-color: #6e93f7;
+    height: 32px;
+    width: 32px;
+    font-size: 18px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.button .btn-text{
+    font-size: 32px;
+    font-weight: 400px;
+    color: #fff;
+}
+
+
+.bottom-container{
+    background-color: #66BFBF;
+    padding: 45px 0 45px;
+    display: flex;
+    gap: 15px;
+    align-items:center;
+    justify-content: center;
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+.copyright-message{
+    color: #eaf6f6;
+    font-family: 'poppins',sans-serif;
+    font-size: 0.75rem;
+    padding: 18px 12px;
+}
